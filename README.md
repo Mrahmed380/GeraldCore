@@ -26,6 +26,23 @@ Open command prompt inside GeraldCore folder
 
 Run ```start.cmd```
 
+Editing the config file:
+
+config file: ```config.json```
+
+```
+{
+	"prefix": "/", //Bot Command Prefix
+	"token": "token-goes-here", //Bot token
+	"activity": "/help", //Activity shown below name
+	"ignoredChannels": [""], //Comma seperated channel IDs
+	"blacklist": [""], //Comma seperated usernames and tags eg: user#1234
+	"color": "#000000", //Colour code in HEX
+	"botName": "Bot", //Bot Name
+	"version": "3.4" //Version
+}
+```
+
 File Descriptions:
 
 ```commands```
