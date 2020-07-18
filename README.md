@@ -6,6 +6,7 @@ Download and install NodeMon
 ```npm install -g nodemon```
 
 Download GeraldCore
+```git clone https://github.com/Elementalmp4/GeraldCore```
 
 Install dependencies
 ```npm install package.json```
