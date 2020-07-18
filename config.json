@@ -1,10 +1,10 @@
 {
-	"prefix": "/", //Bot Command Prefix
-	"token": "token-goes-here", //Bot token
-	"activity": "/help", //Activity shown below name
-	"ignoredChannels": [""], //Comma seperated channel IDs
-	"blacklist": [""], //Comma seperated usernames and tags eg: user#1234
-	"color": "#000000", //Colour code in HEX
-	"botName": "Bot", //Bot Name
-	"version": "3.4" //Version
+	"prefix": "/",
+	"token": "token-goes-here",
+	"activity": "/help",
+	"ignoredChannels": [""],
+	"blacklist": [""],
+	"color": "#000000",
+	"botName": "Bot",
+	"version": "3.4"
 }
