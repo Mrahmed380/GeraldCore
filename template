@@ -1,0 +1,9 @@
+module.exports = {
+	name: 'name',
+	description: 'description',
+	usage: '/commandName [args]',
+	class: 'Fun/Useful/Repetitive/NSFW',
+	execute(msg, args, client) {
+		
+	},
+};
