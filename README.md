@@ -14,11 +14,13 @@ Install dependencies
 Running GeraldCore:
 
 LINUX:
+
 run once: ```sudo chmod +x ./start.sh```
 
 Then to start: ```./start.sh```
 
 WINDOWS:
+
 Double-click ```start.cmd``` to run
 
 OR
