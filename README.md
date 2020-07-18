@@ -1,6 +1,6 @@
 # GeraldCore: Self-Deployable Discord Bot with customisable commands
 
-Installation:
+# Installation:
 
 Download and install NodeMon
 ```npm install -g nodemon```
@@ -29,7 +29,7 @@ Open command prompt inside GeraldCore folder
 
 Run ```start.cmd```
 
-Editing the config file:
+# Editing the config file:
 
 config file: ```config.json```
 
@@ -46,7 +46,7 @@ config file: ```config.json```
 }
 ```
 
-File Descriptions:
+# File Descriptions:
 
 ```commands```
 contains all commands
@@ -74,3 +74,51 @@ custom command template
 
 ```userstat.json```
 contains user rank information
+
+# Creating custom commands
+
+Create a new file with the name of your command, and the file extension '.js' eg: ```command.js```
+
+Copy and paste template into the file: 
+
+```
+module.exports = {
+	name: 'name',
+	description: 'description',
+	usage: '/commandName [args]',
+	class: 'Fun/Useful/Repetitive/NSFW',
+	execute(msg, args, client) {
+		
+	},
+};
+
+```
+
+Fill in command information ```name, description, usage, class```
+
+Add the command code 
+
+Use ```msg``` to get the message to act upon
+
+Use ```args``` to get the command arguments
+
+Use ```Client``` to get the Bot's Client object
+
+Example Code:
+
+```
+module.exports = {
+	name: 'reply-with-word',
+	description: 'Replies what you said to the bot',
+	usage: '/reply-with-word [string]',
+	class: 'Fun',
+	execute(msg, args, client) {
+		var str = args.join(" ");
+		msg.channel.send(str);
+		console.log("Replied to message with: " + str);
+	},
+};
+
+```
+
+NodeMon will detect a new file and automatically restart. It will also restart on every file update
