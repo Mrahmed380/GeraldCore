@@ -11,7 +11,7 @@ Download GeraldCore
 Install dependencies
 ```npm install package.json```
 
-Running GeraldCore:
+# Running GeraldCore:
 
 LINUX:
 
